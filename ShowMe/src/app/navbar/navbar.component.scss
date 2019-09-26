@@ -1,33 +1,41 @@
 
+.myLogo{
+    font-family: 'Be Vietnam', sans-serif;
+    margin-left: 3%;
+    font-size: 25px;
+}
 
 .searchform{
    margin: auto;
 }
+.mytest{
+   margin-left: 10px;
+}
+
 .navbar{
+    border-width: 0px 0px 1px 0px;
+    border-color: #9AD4D6;
+    border-style: solid;
     background-color: #DBCBD8;
     height: 100%;
-    border-radius: 0px 0px 5px 5px;
 }
 
 .custom-navbar{
-    height: 80px;
+    height: 75px;
 }
 
 ul li{
-    align-content: center;
     display: inline;
     margin-left: 5%;
 }
 
 .locationsList{
-    height: 30px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    height: 40px;
     text-align: center;
     margin: auto;
-    border-radius: 0px 0px 5px 5px;
-    background-color: #F2FDFF;
-}
-
-
-#sometext{
-   color:blue;
+    padding-top: 5px;
+    border-radius: 0px 0px 7px 7px;
+    background-color: #9AD4D6;
 }
