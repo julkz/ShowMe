@@ -1,3 +1,4 @@
+import { UtilitiesService } from './utilities.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,7 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UtilitiesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

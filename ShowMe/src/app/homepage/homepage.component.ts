@@ -1,3 +1,4 @@
+import { UtilitiesService } from './../utilities.service';
 import { Component, OnInit } from '@angular/core';
 //<h2>Homepage text </h2>
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public utils: UtilitiesService) { }
 
   ngOnInit() {
   }
