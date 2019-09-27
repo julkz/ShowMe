@@ -7,7 +7,7 @@
 }
 
 .myLogo:hover{
-   
+    text-decoration: none;
 }
 
 .searchform{
@@ -28,6 +28,10 @@
 
 .custom-navbar{
     height: 75px;
+}
+
+.locationName:hover{
+    font-size: 17px;
 }
 
 ul li{
