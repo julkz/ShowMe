@@ -1,0 +1,22 @@
+
+.highlightsContainer{
+    margin: auto;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.visitMe{
+    width: 40%;
+}
+
+.locationImg{
+    
+    border-radius: 2px;
+}
+
+.locationText{
+    height: 50px;
+    //white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
