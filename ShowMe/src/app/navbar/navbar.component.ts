@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private utils: UtilitiesService) { }
+  constructor(private utils: UtilitiesService ) { }
 
   ngOnInit() {
   }

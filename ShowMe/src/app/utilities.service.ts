@@ -9,7 +9,7 @@ brandName = "ShowMe";
  uma aplicaçao de turismo no formato OnePageApplication`;
 
 getLocationsList(){
-  return ["Ponta Delgada", "Suiça","Sao Pedro","Lisboa","Vila franca"];
+  return ["Sao Miguel", "Terceira","Sao Jorge","Santa Maria","Pico"];
 }
 
   constructor() { }
