@@ -7,7 +7,7 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ location.title}}</h5>
                           <p class="card-text locationText">{{ location.description}} </p>
-                          <a href="#" class="btn btn-primary visitMe">Visit</a>
+                          <a [routerLink]="['/location', location.id]" class="btn btn-primary visitMe">Visit</a>
                         </div>
                       </div>
           </div>   

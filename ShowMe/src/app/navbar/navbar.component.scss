@@ -1,9 +1,13 @@
 @import 'src/app/_partialCustom';
 
-.myLogo{
+.myLogo {
     font-family: 'Be Vietnam', sans-serif;
     margin-left: 3%;
-    font-size: 25px;
+    font-size: 25px;  
+}
+
+.myLogo:hover{
+   
 }
 
 .searchform{
