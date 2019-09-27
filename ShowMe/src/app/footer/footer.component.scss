@@ -1,16 +1,36 @@
 
-*{
-    margin:0px; padding:0px;
-}
+@import 'src/app/_partialCustom';
 
-.customFooter{
+#customFooter{
+    
     border-radius: 5px;
-    background-color: #9AD4D6;
+    background-color: $footerBackground;
 
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 17%;
     width: 100%;
-    text-align: justify;
+}
+
+.footerLinks{
+    @extend %underlined;
+    margin-left: 20px;
+    bottom: 0;
+    text-decoration: none;
+} 
+
+.footerLinks:hover{
+    font-size: 23px;
+}
+
+.contacts{
+    position: absolute;
+    text-align: right;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+.contacts:hover{
+    font-size: 22px;
 }

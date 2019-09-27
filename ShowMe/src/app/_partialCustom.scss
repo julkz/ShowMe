@@ -1,0 +1,14 @@
+$bannerBackground: #03596B;
+
+$footerBackground: #16DB93;
+
+%loading{
+   font-size: 30px;
+   text-align: center;
+}
+
+%underlined{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(29, 29, 29, 0.877);
+}

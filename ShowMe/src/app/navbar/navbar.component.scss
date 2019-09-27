@@ -1,3 +1,4 @@
+@import 'src/app/_partialCustom';
 
 .myLogo{
     font-family: 'Be Vietnam', sans-serif;
@@ -7,6 +8,7 @@
 
 .searchform{
    margin: auto;
+   margin-left: 60%;
 }
 .mytest{
    margin-left: 10px;
@@ -16,7 +18,7 @@
     border-width: 0px 0px 1px 0px;
     border-color: #9AD4D6;
     border-style: solid;
-    background-color: #95C623;
+    background-color: $bannerBackground; 
     height: 100%;
 }
 
@@ -25,17 +27,17 @@
 }
 
 ul li{
-    display: inline;
+    display: inline; 
     margin-left: 5%;
 }
 
 .locationsList{
-    border-width: 0px 0px 1px 0px;
-    border-style: solid;
+    background-color: $footerBackground; //#9AD4D6
     height: 40px;
+    border-style: solid;
     text-align: center;
     margin: auto;
+    border-width: 0px 0px 1px 0px;
     padding-top: 5px;
-    border-radius: 0px 0px 7px 7px;
-    background-color: #9AD4D6;
+    border-radius: 0px 0px 7px 7px;  
 }

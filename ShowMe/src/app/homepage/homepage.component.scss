@@ -1,0 +1,6 @@
+@import 'src/app/_partialCustom';
+
+.loading{
+    margin-top: 10%;
+    @extend %loading;
+}
