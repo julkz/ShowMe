@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { LocationDetailsComponent } from './location-details/location-details.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { LocationDetailsComponent } from './location-details/location-details.co
     FooterComponent,
     HighlightsComponent,
     LocationDetailsComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
