@@ -1,33 +1,12 @@
 @import 'src/app/_partialCustom';
 
-.myLogo {
-    font-family: 'Be Vietnam', sans-serif;
-    margin-left: 3%;
-    font-size: 25px;  
-}
-
-.myLogo:hover{
-    text-decoration: none;
-}
-
-.searchform{
-   margin: auto;
-   margin-left: 60%;
-}
-.mytest{
-   margin-left: 10px;
-}
-
 .navbar{
-    border-width: 0px 0px 1px 0px;
-    border-color: #9AD4D6;
-    border-style: solid;
-    background-color: $bannerBackground; 
-    height: 100%;
+    background-color: #dddddd; 
+    height: 70px;
 }
 
 .custom-navbar{
-    height: 75px;
+    height: 70%;
 }
 
 .locationName:hover{
@@ -40,12 +19,29 @@ ul li{
 }
 
 .locationsList{
-    background-color: $footerBackground; //#9AD4D6
+    background-color: #eeeeee;
     height: 40px;
     border-style: solid;
     text-align: center;
     margin: auto;
     border-width: 0px 0px 1px 0px;
     padding-top: 5px;
-    border-radius: 0px 0px 7px 7px;  
+    border-radius: 0px 0px 4px 4px;  
+    opacity: 0.8;
 }
+
+@media screen and (max-width: 500px) {
+    .locationsList {
+      display: none;
+    }
+  }
+
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+  
