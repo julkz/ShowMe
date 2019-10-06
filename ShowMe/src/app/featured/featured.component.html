@@ -1,1 +1,13 @@
-<p>featured works!  {{ featuredLocation.title }}</p>
+<div class= "featured"> 
+
+<h2 class= "text"> Featured </h2>
+
+<div class="media">
+    <img src="{{ featuredLocation.imageSrc }}" class="align-self-center mr-3" id ="image" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0">{{ featuredLocation.title}}</h5>
+      <p class="mb-0">{{ featuredLocation.description }}</p>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,21 @@
+
+
+#textForm{
+  width:50%;
+  margin: auto;
+}
+
+
+#inputField{
+    margin-left: 10%;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  #textForm{
+    width:75%;
+    margin: auto;
+  }
+  
+}
+    
