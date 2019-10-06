@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { LocationDetailsComponent } from './location-details/location-details.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FeaturedComponent } from './featured/featured.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HighlightsComponent,
     LocationDetailsComponent,
     NotFoundComponent,
+    FeaturedComponent,
   ],
   imports: [
     BrowserModule,
