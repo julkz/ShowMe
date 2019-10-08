@@ -11,6 +11,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { LocationDetailsComponent } from './location-details/location-details.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { FeaturedComponent } from './featured/featured.component';
+import { SearchformComponent } from './searchform/searchform.component';
+import { LocationlistComponent } from './locationlist/locationlist.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { LocationDetailsComponent } from './location-details/location-details.co
     FooterComponent,
     HighlightsComponent,
     LocationDetailsComponent,
+    NotFoundComponent,
+    FeaturedComponent,
+    SearchformComponent,
+    LocationlistComponent,
   ],
   imports: [
     BrowserModule,
