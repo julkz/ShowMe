@@ -1,0 +1,16 @@
+{
+  "name": "serverpackage",
+  "version": "0.0.1",
+  "description": "A npm json package to all dependecies required to run the server proving a Restful Api",
+  "scripts": {
+    "start": "nodemon runserver.js",
+    "prestart": "node dbShowMe.js"
+  },
+  "author": "David Sousa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.3",
+    "nodemon": "^1.19.3"
+  }
+}
