@@ -15,13 +15,17 @@ export class FeaturedComponent implements OnInit {
     console.log(apiProvider.getFeaturedLocation());
   }
 
+  async getFeaturedLocation(){
+    const response = await this.apiProvider.getFeaturedLocation();
+    const myJson =  await response; //extract JSON from the http response
+    this.featuredLocation = myJson;
+    return myJson;
+  }
+
   
 
   ngOnInit() {
-
-    
-
-this.featuredLocation = this.apiProvider.getFeaturedLocation();
+    this.getFeaturedLocation();
 
   }
   

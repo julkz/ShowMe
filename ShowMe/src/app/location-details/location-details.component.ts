@@ -13,14 +13,22 @@ export class LocationDetailsComponent implements OnInit {
    id;
    location;
 
-  constructor(private route: ActivatedRoute, private locationsApi: LocationsApiService) { }
+  constructor(private route: ActivatedRoute, private apiProvider: LocationsApiService) { }
+
+
+  async getFeaturedLocation(){
+    const response = await this.apiProvider.getLocationById(this.id);
+    const myJson =  await response; //extract JSON from the http response
+    this.location = myJson;
+    return myJson;
+  }
 
   ngOnInit() {
    this.route.paramMap
    .subscribe(params =>  {
-     this.id = +params.get('id')
+     this.id = params.get('id')
    })
-   this.location = this.locationsApi.getLocationById(this.id);
+   this.getFeaturedLocation();
   }
 
 }

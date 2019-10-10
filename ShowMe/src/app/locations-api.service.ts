@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 Injectable()
 export class LocationsApiService {
 
-  Locations = [{
+ /* Locations = [{
     id: 1,
     imageSrc: "https://i.pinimg.com/originals/51/38/77/513877e16457c6c0a7e525e63b9ba556.jpg",
     featured: false,
@@ -32,12 +32,13 @@ export class LocationsApiService {
         aqui é possivel tomar banho numa zona com uma fonte vulcanica chegando a haver zonas da agua a atingir 26º `
         }] 
 
+        */
+
 
 // Returns an array of top visited places    TODO
 async requestApiHighlights () {
   const response = await fetch('http://localhost:4300/');
   const myJson =  await response.json(); //extract JSON from the http response
-  // do something with myJson
   console.log(myJson);
   return myJson;
 }
@@ -50,33 +51,26 @@ async requestApiHighlights () {
     return myJson;*/
 
 // Gets location by id identifier
-getLocationById(id){
- return this.returnLocation(id);
+async getLocationById(id){    // TODO
+  const response = await fetch('http://localhost:4300/location/'+id);
+  const myJson =  await response.json(); //extract JSON from the http response
+  console.log(myJson);
+  return myJson;
 }
 
 // Gets Location with Featured identifier
- getFeaturedLocation(){
-   for (let x = 0; x < this.Locations.length; x++) {
-     const element = this.Locations[x];
-     if(element.featured) {
-       return element;
-     }
-   }
+ async getFeaturedLocation(){
+  const response = await fetch('http://localhost:4300/featured');
+  const myJson =  await response.json(); //extract JSON from the http response
+  console.log(myJson);
+  return myJson;
 }
 
 
-developmentHighlights() {
-  return this.Locations;
-}
 
 
-private returnLocation(idAux){
-  for(let x=0; x <idAux; x++) {
-    if(this.Locations[x].id == idAux ) {
-      return this.Locations[x];
-    }
-  }
-}
+
+
 
   constructor() { }
 }

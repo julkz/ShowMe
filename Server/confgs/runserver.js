@@ -11,8 +11,9 @@ app.use(express.json());
 
 //Import Routes
 const postRoutes = require('./routes/posts');
+const getRoutes = require ('./routes/gets');
 
-app.use('/', postRoutes);
+app.use('/', getRoutes);
 
 // Routes
 app.get('/', (req,res) => {

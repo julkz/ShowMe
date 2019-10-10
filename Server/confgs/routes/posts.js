@@ -3,17 +3,6 @@ const router = express.Router();
 const Post = require ('../modules/postsmodl');
 
 
-router.get('/', async (req,res) => {
-    try {
-        const post = await Post.find().limit(3);
-        console.log("/GET request");
-        res.header('Access-Control-Allow-Origin', '*');
-        res.json(post);
-    } catch (err){
-        res.json(err);
-    }
-});
-
 router.post('/', async (req,res) => {
     const post = new Post({
         id: req.body.id,
