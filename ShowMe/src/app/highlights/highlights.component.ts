@@ -10,7 +10,6 @@ export class HighlightsComponent implements OnInit {
 
    highlights;
 
-   executor;
 
   constructor(public apiProvider: LocationsApiService) {
     console.log(this.highlights);

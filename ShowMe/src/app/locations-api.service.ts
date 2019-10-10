@@ -35,7 +35,7 @@ export class LocationsApiService {
 
 // Returns an array of top visited places    TODO
 async requestApiHighlights () {
-  const response = await fetch('http://localhost:4300/posts');
+  const response = await fetch('http://localhost:4300/');
   const myJson =  await response.json(); //extract JSON from the http response
   // do something with myJson
   console.log(myJson);
@@ -55,7 +55,7 @@ getLocationById(id){
 }
 
 // Gets Location with Featured identifier
-getFeaturedLocation(){
+ getFeaturedLocation(){
    for (let x = 0; x < this.Locations.length; x++) {
      const element = this.Locations[x];
      if(element.featured) {

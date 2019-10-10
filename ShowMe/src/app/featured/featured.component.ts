@@ -13,10 +13,13 @@ export class FeaturedComponent implements OnInit {
   constructor(public apiProvider: LocationsApiService) { 
 
     console.log(apiProvider.getFeaturedLocation());
-
   }
 
+  
+
   ngOnInit() {
+
+    
 
 this.featuredLocation = this.apiProvider.getFeaturedLocation();
 
