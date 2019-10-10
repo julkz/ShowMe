@@ -8,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HighlightsComponent implements OnInit {
 
-  constructor(public apiProvider: LocationsApiService) { }
+   highlights;
+
+   executor;
+
+  constructor(public apiProvider: LocationsApiService) {
+    console.log(this.highlights);
+   }
+
+   async getHighlightsApi() {
+    const response = await this.apiProvider.requestApiHighlights();
+    const myJson =  await response; //extract JSON from the http response
+    // do something with myJson
+    console.log(myJson);
+    this.highlights = myJson;
+    return myJson;
+   }
 
   ngOnInit() {
+    this.getHighlightsApi();
   }
+  
 
 }

@@ -6,7 +6,7 @@ export class LocationsApiService {
   Locations = [{
     id: 1,
     imageSrc: "https://i.pinimg.com/originals/51/38/77/513877e16457c6c0a7e525e63b9ba556.jpg",
-    Featued: false,
+    featured: false,
     title: "Miradouro Sra. da Paz",
     location: "Vila Franca do Campo",
     description: `Este miradouro localiza-se no concelho de Vila Franca do Campo no topo de uma colina.
@@ -15,7 +15,7 @@ export class LocationsApiService {
      {
       id:2,
       imageSrc: "https://images.turismoenportugal.org/Miradouro-Pico-do-Ferro.jpg",
-      Featued: false,
+      featured: false,
       title: "Miradouro Pico do Ferro",
       location: "Furnas",
       description: `  Situado na freguesia das furnas este miradouro previligia-se pela vista,
@@ -25,17 +25,29 @@ export class LocationsApiService {
        {
         id:3,
         imageSrc: "https://thebestofazores.com/wp-content/uploads/2019/03/ferraria.jpg",
-        Featued: true,
+        featured: true,
         title: "Ponta da Ferraria",
         location: "Ponta Delgada",
         description: ` Passagem obrigatória. Situado a Oeste de Ponta Delgada ao longo da costa sul,
         aqui é possivel tomar banho numa zona com uma fonte vulcanica chegando a haver zonas da agua a atingir 26º `
-        }]
+        }] 
+
 
 // Returns an array of top visited places    TODO
-requestApiHighlights(){
-  return this.Locations;
+async requestApiHighlights () {
+  const response = await fetch('http://localhost:4300/posts');
+  const myJson =  await response.json(); //extract JSON from the http response
+  // do something with myJson
+  console.log(myJson);
+  return myJson;
 }
+
+  /*
+    const response = await fetch('http://localhost:4300/posts');
+    const myJson =  await response.json(); //extract JSON from the http response
+    // do something with myJson
+    console.log(myJson);
+    return myJson;*/
 
 // Gets location by id identifier
 getLocationById(id){
@@ -46,12 +58,15 @@ getLocationById(id){
 getFeaturedLocation(){
    for (let x = 0; x < this.Locations.length; x++) {
      const element = this.Locations[x];
-     if(element.Featued) {
+     if(element.featured) {
        return element;
      }
    }
+}
 
-  return null;
+
+developmentHighlights() {
+  return this.Locations;
 }
 
 
