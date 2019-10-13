@@ -15,6 +15,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { SearchformComponent } from './searchform/searchform.component';
 import { LocationlistComponent } from './locationlist/locationlist.component';
+import { CreatelocationComponent } from './createlocation/createlocation.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LocationlistComponent } from './locationlist/locationlist.component';
     FeaturedComponent,
     SearchformComponent,
     LocationlistComponent,
+    CreatelocationComponent,
   ],
   imports: [
     BrowserModule,

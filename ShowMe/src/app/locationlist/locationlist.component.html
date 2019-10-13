@@ -1,7 +1,7 @@
 
 <div class ="wrapper listwrapper">
         <ul class="locationsList"> 
-            <li *ngFor=" let location of utils.getLocationsList()">
+            <li *ngFor=" let location of serviceApi.getLocationList()">
                 <a class ="locationName" href="{{ location }}">{{ location }}</a> 
             </li>
         </ul> 

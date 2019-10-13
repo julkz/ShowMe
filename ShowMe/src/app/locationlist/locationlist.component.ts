@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilitiesService } from '../utilities.service';
+import { LocationsApiService } from '../locations-api.service';
 
 @Component({
   selector: 'app-locationlist',
@@ -8,7 +9,7 @@ import { UtilitiesService } from '../utilities.service';
 })
 export class LocationlistComponent implements OnInit {
 
-  constructor(private utils: UtilitiesService) { }
+  constructor(public serviceApi: LocationsApiService) { }
 
   ngOnInit() {
   }
