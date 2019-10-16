@@ -1,15 +1,15 @@
 
 <div class="container highlightsContainer">
         <div class="row">
-          <div class="col-sm" *ngFor="let location of highlights">
+          <div class="col-sm" id=" cardsHolder" *ngFor="let location of highlights">
 
-                <div class="card" style="width: 18rem;">
-                        <img src="{{ location.imageSrc }}" class="card-img-top locationImg" alt="...">
+                <div class="card" id="cardId"[routerLink]="['/location', location.id]"  style="width: 18rem;">
+                        <img src="{{ location.imageSrc }}" class="card-img-top cardImg" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">{{ location.title}}</h5>
                           <p class="card-text locationText">{{ location.description}} </p>
                           <div class="fadeout"></div>
-                          <a [routerLink]="['/location', location.id]" class="btn btn-primary visitMe">Visit</a>
+                          <a class="btn btn-primary btnVisit ">Visit</a>
                          </div>
                   </div>
                   

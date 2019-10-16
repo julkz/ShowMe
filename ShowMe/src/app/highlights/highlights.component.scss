@@ -1,6 +1,4 @@
-
 .highlightsContainer{
-    
     margin: auto;
     text-align: center;
 }
@@ -11,14 +9,15 @@
     margin-top: 5%;
 }
 
-.visitMe{
-    width: 40%;
+#cardId:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: 2px 2px 20px 10px rgba(46, 46, 46, 0.23), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
 
-.locationImg{
-    
-    border-radius: 2px;
-}
+.btnVisit{ width: 40%; }
+
+.locationImg{ border-radius: 2px; }
 
 .locationText{
     height: 50px;
@@ -30,12 +29,11 @@
 .fadeout {
     position: absolute; 
     bottom: 4em;
-    width:100%;
+    width: 85%;
     height: 4em;
     background: -webkit-linear-gradient(
         rgba(255, 255, 255, 0) 10%,
-        rgba(255, 255, 255, 1) 40%
-    ); 
-    
+        rgba(255, 255, 255, 1) 40% ); 
 } 
+
 section {position:relative}     

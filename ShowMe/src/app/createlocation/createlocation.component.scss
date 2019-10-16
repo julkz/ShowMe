@@ -1,0 +1,22 @@
+*{
+    margin: 1%;
+}
+
+.myForm{
+    width: 80%;
+}
+
+.submitBtn{
+    padding-bottom: 2%;
+}
+
+@media screen and (max-width: 500px) {
+    
+#createStruct{
+    display: block;
+    flex-direction: row;
+    margin:auto;
+    }
+
+}
+

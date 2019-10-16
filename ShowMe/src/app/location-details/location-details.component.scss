@@ -1,0 +1,11 @@
+@import 'src/app/_partialCustom' ;
+
+.locationCard{
+    -webkit-box-shadow: 9px 9px 25px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 25px -15px rgba(0,0,0,0.75);
+    box-shadow: 9px 9px 25px -15px rgba(0,0,0,0.75);
+
+    border-style: solid;
+    border-color: $Blue;
+    border-width: 2px ;
+}

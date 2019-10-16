@@ -1,11 +1,13 @@
-<div class= "featured"> 
 
-<h2 class= "text"> Featured </h2>
 
-<div class="media">
-    <img src="{{ featuredLocation.imageSrc }}" class="align-self-center mr-3" id ="image" alt="...">
+<div class= "component"> 
+  <h2 class= "featured"> Featured </h2>
+
+<div class="media locationInfo">
+    <img src="{{ featuredLocation.imageSrc }}" class="" id ="image" alt="...">
     <div class="media-body">
-      <h5 class="mt-0">{{ featuredLocation.title}}</h5>
+      <h2 class="locationTitle">{{ featuredLocation.title}}</h2>
+      <span></span>
       <p class="mb-0">{{ featuredLocation.description }}</p>
     </div>
   </div>

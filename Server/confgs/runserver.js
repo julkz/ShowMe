@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-
 //Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -37,7 +36,10 @@ try {
 }
 
 
+
+const connection = '192.168.1.66';
+
 // Starts listening
-console.log("Express started listening ...");
-app.listen(4300, '192.168.1.66');
+console.log('Express started listening  at '+ connection + '...');
+app.listen(4300, connection);
 

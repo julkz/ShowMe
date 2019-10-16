@@ -1,13 +1,32 @@
 
 
-
-.featured{
+.component{
     text-align: left;
     margin: auto;
+    padding:  0% 1% 2% 2%;
 }
+.featured{
+    padding: 0% 2% 0%;
+}
+
+@media only screen and (max-width: 600px) {
+    .locationInfo {
+        display: block;
+    }
+    
+    #image{
+        width: 70%;
+    }
+  }
 
 .media{
     text-align: center;
+    margin: 0% 1%;
+    background-color: #11999e;
+
+    -webkit-box-shadow: -2px -1px 66px -31px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 66px -31px rgba(0,0,0,0.75);
+box-shadow: -2px -1px 66px -31px rgba(0,0,0,0.75);
 }
 
 #image{
