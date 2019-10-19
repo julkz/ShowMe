@@ -12,6 +12,7 @@ app.use(express.json());
 const postRoutes = require('./routes/posts');
 const getRoutes = require ('./routes/gets');
 
+app.post('/', postRoutes);
 app.use('/', getRoutes);
 
 // Routes
@@ -25,10 +26,9 @@ const atlasdb = " mongodb+srv://root:123@showme-uvps4.mongodb.net/test?retryWrit
 //Database connection
 try {
     mongoose.connect('mongodb+srv://root:123@showme-uvps4.mongodb.net/test?retryWrites=true&w=majority',
-    { useNewUrlParser: true,
-        
+    { useNewUrlParser: true,   
       useUnifiedTopology: true
-    },  () => {
+    }, () => {
     console.log("Established connection to database.") }) 
 } catch( err) {
     console.log(err);

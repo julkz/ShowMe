@@ -4,6 +4,8 @@ const Post = require ('../modules/postsmodl');
 
 
 router.post('/', async (req,res) => {
+
+    console.log("/POST  /createdLocation");
     const post = new Post({
         id: req.body.id,
         imageSrc: req.body.imageSrc,
@@ -15,10 +17,13 @@ router.post('/', async (req,res) => {
 
     try{
         const savedpost = await post.save();
+        res.header('Access-Control-Allow-Origin', '*');  // For CORS Policy error prevent
         res.json(savedpost);
     } catch (err) {
         res.json(err);
     }
 });
+
+
 
 module.exports = router;

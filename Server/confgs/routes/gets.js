@@ -28,7 +28,7 @@ router.get('/location/:id',  async (req,res) => {
 
 router.get('/', async (req,res) => {
     try {
-        const post = await Post.find().limit(3);
+        const post = await Post.find();  //.limit(3)
         console.log("/GET request");
         res.header('Access-Control-Allow-Origin', '*');
         res.json(post);

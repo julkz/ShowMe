@@ -8,7 +8,7 @@ brandName = "ShowMe";
 ApiListeningPort : 4300;
 
         // Insert the output ip of ngrok  from Server      <-> If using ngrok <->
-static  NgrokIP = "http://29ba3a76.ngrok.io";
+static  NgrokIP = "http://f7623f86.ngrok.io";
 
         // Insert your local ip and server listening port
 static  LocalIP = "http://192.168.1.66:4300";
