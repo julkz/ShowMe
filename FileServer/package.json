@@ -1,0 +1,14 @@
+{
+    "name": "fileserverpackage",
+    "version": "0.0.1",
+    "description": "The package for npm dependencies and setup. Providing the necessary to run the File Server.",
+    "scripts": {
+      "start": "node runFileServer.js"
+    },
+    "author": "David Sousa",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
