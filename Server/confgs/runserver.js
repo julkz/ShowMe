@@ -20,7 +20,6 @@ app.get('/', (req,res) => {
     res.send('We are on home!');
 })
 
-const jsousa = "mongodb://david:motasousa@localhost/yourdatabase";
 const atlasdb = " mongodb+srv://root:123@showme-uvps4.mongodb.net/test?retryWrites=true&w=majority";
 
 //Database connection
@@ -38,8 +37,9 @@ try {
 
 
 const connection = '192.168.1.66';
+const Port = 4300;
 
 // Starts listening
-console.log('Express started listening  at '+ connection + '...');
-app.listen(4300, connection);
+console.log('Express started listening  at '+ connection + ' and port: '+Port);
+app.listen(Port, connection);
 

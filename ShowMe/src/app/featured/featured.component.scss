@@ -1,23 +1,28 @@
 
-
 .component{
+    margin-top: 6%;
+    position: relative;
+}
+
+
+.featuredcard::before{
+    content:'';
+    background-image: url('http://192.168.1.66:4100/wp-assets/featuredtag.svg');
+    position: absolute;
+    bottom:100%;
+    left: 6%;
+    height: 6%;
+    width: 30%;
+
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+.featuredcard{
     text-align: left;
     margin: auto;
-    padding:  0% 1% 2% 2%;
+    padding:  2% 0%;
 }
-.featured{
-    padding: 0% 2% 0%;
-}
-
-@media only screen and (max-width: 600px) {
-    .locationInfo {
-        display: block;
-    }
-    
-    #image{
-        width: 70%;
-    }
-  }
 
 .media{
     text-align: center;
@@ -33,4 +38,19 @@ box-shadow: -2px -1px 66px -31px rgba(0,0,0,0.75);
     margin: 2%;
     width: 40%;
     height: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+   /* #image{
+      
+      
+    }*/
+
+    .featuredcard::before{
+        background-size: 50%;
+        top:-15px;
+    }
+    
 }
