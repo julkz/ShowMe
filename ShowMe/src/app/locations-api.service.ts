@@ -9,7 +9,6 @@ export class LocationsApiService {
 async requestApiHighlights () {
   const response = await fetch(UtilitiesService.LocalIP);
   const myJson =  await response.json(); //extract JSON from the http response
-  console.log(myJson);
   return myJson;
 }
 
@@ -17,7 +16,6 @@ async requestApiHighlights () {
 async getLocationById(id){    // TODO
   const response = await fetch(UtilitiesService.LocalIP+'/location/'+id);
   const myJson =  await response.json(); //extract JSON from the http response
-  console.log(myJson);
   return myJson;
 }
 
@@ -25,7 +23,6 @@ async getLocationById(id){    // TODO
  async getFeaturedLocation(){
   const response = await fetch(UtilitiesService.LocalIP + '/featured');
   const myJson =  await response.json(); //extract JSON from the http response
-  console.log(myJson);
   return myJson;
 }
 

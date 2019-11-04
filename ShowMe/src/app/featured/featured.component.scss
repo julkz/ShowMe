@@ -1,5 +1,6 @@
 
 .component{
+    border-radius: 20px;
     margin-top: 6%;
     position: relative;
 }
@@ -19,20 +20,23 @@
 }
 
 .featuredcard{
-    text-align: left;
     margin: auto;
     padding:  2% 0%;
-}
+    border-radius: 4px;
 
-.media{
+
+    // Optional delegation to .media 
     text-align: center;
     margin: 0% 1%;
     background-color: #11999e;
-
     -webkit-box-shadow: -2px -1px 66px -31px rgba(0,0,0,0.75);
 -moz-box-shadow: -2px -1px 66px -31px rgba(0,0,0,0.75);
 box-shadow: -2px -1px 66px -31px rgba(0,0,0,0.75);
 }
+
+ /*.media{
+    //class required by bootstrap
+} */
 
 #image{
     margin: 2%;
@@ -42,15 +46,10 @@ box-shadow: -2px -1px 66px -31px rgba(0,0,0,0.75);
 
 
 @media only screen and (max-width: 600px) {
-    
-   /* #image{
-      
-      
-    }*/
-
     .featuredcard::before{
+        text-align: left; //to check if conflicts, remove if not
+
         background-size: 50%;
         top:-15px;
     }
-    
 }
